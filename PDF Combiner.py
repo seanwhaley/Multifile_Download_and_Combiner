@@ -85,8 +85,9 @@ class Config:
     """Application configuration."""
     BASE_URL: str = 'https://www.whitehouse.gov'
     MEMO_URL: str = 'https://www.whitehouse.gov/omb/information-for-agencies/memoranda/'
-    DOWNLOAD_DIR: str = os.path.join(os.path.expanduser('~'), 'Downloads', 'DOJ EA Proposal', 'OMB_Memos')
-    OUTPUT_DIR: str = os.path.join(os.path.expanduser('~'), 'Downloads', 'DOJ EA Proposal', 'Combined_Parts')
+    A11_URL: str = 'https://www.whitehouse.gov/wp-content/uploads/2018/06/a11_web_toc.pdf'
+    DOWNLOAD_DIR: str = os.path.join(os.path.expanduser('~'), 'Downloads', 'DOJ EA Proposal', 'Downloaded_PDFs')
+    OUTPUT_DIR: str = os.path.join(os.path.expanduser('~'), 'Downloads', 'DOJ EA Proposal', 'Combined_Files')
     LOG_DIR: str = os.path.join(os.path.dirname(__file__), 'logs')
     PDF_PATTERN: str = r'.*\.pdf$'
     WORD_LIMIT: int = 50000  # Maximum words per combined PDF
